@@ -1,0 +1,183 @@
+@charset "utf-8";
+body {
+  padding-top: 70px;
+}
+/*模态框头部样式*/
+.modal-header {
+  background-color: #D9EDF7;
+}
+/*绿色椭圆作为背景*/
+.bg_ellipse_green {
+  height: 60px;
+  background-size: 100px;
+  background-image: url(../image/ellipse-green.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*灰色椭圆作为背景*/
+.bg_ellipse_gray {
+  height: 60px;
+  background-size: 100px;
+  background-image: url(../image/ellipse-gray.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*背景上面有文字*/
+[class*="bg_ellipse_"] h3 {
+  line-height: 60px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+[class*="bg_ellipse_"] h4 {
+	line-height: 60px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/*工具栏图标样式*/
+.tool_bar {
+  float: left;
+  display: inline;
+}
+.tool_bar img {
+  height: 23px;
+  width: 23px;
+}
+.navbar-brand {
+ height: 40px;
+ padding-top: 10px;
+ }
+.navbar {
+ min-height: 40px;
+ }
+
+/*工具栏编辑*/
+.tool_bar_edit {
+  float: right;
+  display: inline;
+}
+.tool_bar_edit span {
+  font-size: 20px;
+}
+/*标签页--针对Echars插件用tab切换不能显示的问题*/
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: block;
+  height: 0;
+  overflow-y: hidden;
+}
+.tab-content > .active,
+.pill-content > .active {
+  height: auto;
+}
+/*关联信息部分的样式*/
+.relation-info a img:first-child {
+  height: 50px;
+  width: 50px;
+}
+.relation-info a img:nth-child(2) {
+  height: 20px;
+  width: 20px;
+}
+.relation-info tr:nth-child(2) > td {
+  border-top-color: transparent;
+}
+.relation-info tr:nth-child(3) > td:first-child {
+  vertical-align: middle;
+}
+.relation-info tr:nth-child(4) > td {
+  border-top-color: transparent;
+}
+
+.progress-bar {
+  color: black;
+}
+
+/*---1:begin---*/
+.tree {
+  /* background-color: #E3E3E3; */
+  float: left;
+  padding: 10px 0px;
+  width: 100%;
+  overflow: auto;
+  border: 1px solid #BCE8F1;
+  /* border-top-style: none; */
+  margin-bottom: 10px;
+}
+.tree ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.tree a {
+  text-decoration: none;
+  display: block;
+  padding: 2px 0px 1px 0px;
+}
+.tree-node-1 > li > a {
+  padding-left: 10px;
+}
+.tree-node-2 > li > a {
+  padding-left: 30px;
+}
+.tree-node-3 > li > a {
+  padding-left: 50px;
+}
+.tree-node-4 > li > a {
+  padding-left: 70px;
+}
+.tree-node-5 > li > a {
+  padding-left: 90px;
+}
+.tree li > a:hover {
+  background-color: #D6F7FB;
+}
+.tree li > a:focus {
+  background-color: #ADCBD1;
+}
+.tree img {
+  margin-right: 7px;
+}
+.tree img + img {
+  width: 25px;
+  height: 20px;
+  margin-right: 1px;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border-color: #BCE8F1 #BCE8F1 transparent;
+}
+a {
+  outline: none !important;
+}
+.deploy {
+  display: none;
+}
+.deploy > div {
+  float: left;
+  text-align: center;
+  margin: 5px;
+}
+.deploy > div > img {
+  height: 120px;
+}
+.deploy > div.tool {
+  float: right;
+  margin: 10px;
+}
+.tree-node-1.yy img {
+  height: 70px;
+  width: 80px;
+}
+.tree-node-1.yy a {
+  text-align: center;
+}
+
+.tree-node-1.yy li {
+  background-color: #E9E9E9;
+  margin: 3px 3px;
+}
+
+

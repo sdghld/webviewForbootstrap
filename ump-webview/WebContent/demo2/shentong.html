@@ -1,0 +1,1044 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="../static/bootstrap/3.3.5/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<script src="../static/echarts/build/dist/echarts.js"></script>
+<script src="../static/jquery/jquery-1.11.3.min.js"></script>
+<script src="../static/bootstrap/3.3.5/dist/js/bootstrap.min.js"></script>
+<script src="../static/common/common.js"></script>
+<link href="../static/common/common.css" rel="stylesheet">
+<title>shentongDB</title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">统一监控平台</a>
+		</div>
+		<div id="navbar">
+			<ul class="nav navbar-nav">
+				<li><a href="#">概况</a></li>
+				<li><a href="net.html">网络</a></li>
+				<li><a href="deploy.html">部署</a></li>
+				<li><a href="workspaceApp.html">应用</a></li>
+				<li><a href="#">告警</a></li>
+				<li class="active"><a href="windows.html">资源</a></li>
+				<li><a href="#">系统</a></li>
+			</ul>
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">帮助</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle"
+					data-toggle="dropdown" role="button" aria-haspopup="true"
+					aria-expanded="false">Administrator<span class="caret"></span>
+				</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">个人信息</a></li>
+						<li><a href="#">修改密码</a></li>
+						<li><a href="#">个性化</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">注销</a></li>
+					</ul></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="tree tab-content">
+					<ul class="tree-node-1">
+						<li><a href="#"><img src="../static/image/open.gif"><img
+								src="../static/image/server.png"> <span>数据库 </span> </a>
+							<ul class="tree-node-2">
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>Oracle </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="newOracleDB.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/database_online.png"> <span>HRMIS</span>
+										</a></li>
+									</ul></li>
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>SQL Server</span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="sqlServer.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/database_online.png"> <span>sqlMIS</span>
+										</a></li>
+									</ul></li>
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>MySql</span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="mysql.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/database_online.png"> <span>MySqlMIS</span>
+										</a></li>
+									</ul></li>
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>DM</span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="dameng.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/database_online.png"> <span>DM_MIS</span>
+										</a></li>
+									</ul></li>
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>kingbase </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="kingbase.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/database_online.png"> <span>kingbase_MIS</span>
+										</a></li>
+									</ul></li>
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>神通 </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="shentong.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/database_online.png"> <span>shentong_MIS</span>
+										</a></li>
+									</ul></li>
+							</ul></li>
+						<li><a href="#"><img src="../static/image/open.gif"><img
+								src="../static/image/server.png"> <span>服务器</span> </a>
+							<ul class="tree-node-2">
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>Windows </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="windows.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/enable_server.png"> <span>hrmis
+											</span> </a></li>
+									</ul></li>
+
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>Linux </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="linux.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/server.png"> <span>Linux_1</span>
+										</a></li>
+									</ul></li>
+							</ul></li>
+						<li><a href="#"><img src="../static/image/open.gif"><img
+								src="../static/image/server.png"> <span>应用服务器</span> </a>
+							<ul class="tree-node-2">
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>AS </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="appserver.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/AS.png"> <span>AS服务器</span> </a></li>
+									</ul></li>
+
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>Websphere
+									</span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="websphere.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/server.png"> <span>websphere_1</span>
+										</a></li>
+
+									</ul></li>
+							</ul></li>
+
+						<li><a href="#"><img src="../static/image/open.gif"><img
+								src="../static/image/server.png"> <span>网络设备</span> </a>
+							<ul class="tree-node-2">
+
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>交换机</span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="switch.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/switch_normal.png"> <span>交换机_1</span>
+										</a></li>
+									</ul></li>
+							</ul></li>
+						<ul class="tree-node-2">
+
+							<li><a href="#"> <img src="../static/image/open.gif"><img
+									src="../static/image/server.png"><span>路由器 </span>
+							</a>
+								<ul class="tree-node-3">
+									<li><a href="router.html"><img
+											src="../static/image/leaf.gif"><img
+											src="../static/image/server.png"> <span>路由器_1</span> </a></li>
+								</ul></li>
+						</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-10">
+				<ul class="navbar-right list-inline" style="padding-right: 20px;">
+					<li><a href="#"><div class="tool_bar">
+								<table>
+									<tr>
+										<td><a onclick="popup()" href="#"><img
+												src="../static/image/ping.jpg" alt="PING"
+												data-toggle="tooltip" data-placement="top" title="PING" /></a>&nbsp;&nbsp;&nbsp;</td>
+										<td><a onclick="popup5() " href="#"><img
+												data-toggle="tooltip" data-placement="top"
+												src="../static/image/snmp.png" alt="SNMP连接测试"
+												title="SNMP连接测试" /></a> &nbsp;&nbsp;&nbsp;</td>
+										<td><a href="#" onclick="popup1()"><img
+												data-toggle="tooltip" data-placement="top"
+												src="../static/image/jdbc.png" alt="JDBC连接测试"
+												title="JDBC连接测试" /></a> &nbsp;&nbsp;&nbsp;</td>
+										</a> &nbsp;&nbsp;&nbsp;
+										</td>
+									</tr>
+								</table>
+							</div></a></li>
+				</ul>
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#all_Info" data-toggle="tab">指标一览</a></li>
+					<li><a href="#network_topology" data-toggle="tab">网络拓扑</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">关联应用<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="#relevance_application" data-toggle="tab">数字神经</a></li>
+							<li><a href="#relevance_application" data-toggle="tab">打印系统</a></li>
+						</ul></li>
+					<li><a href="#physical_location" data-toggle="tab">物理位置</a></li>
+					<li><a href="" data-toggle="tab">告警</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="all_Info">
+						<div class="container"
+							style="width: 100%; height: 100%; padding-top: 20px;">
+							<div class="page-content">
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="panel-group" id="accordion">
+											<div class="panel panel-info" id="baseInfo">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" href="#infoCollapse">基本信息</a>
+													</h4>
+												</div>
+												<div id="infoCollapse" class="panel-collapse collapse in">
+													<table class="table">
+														<tbody>
+															<tr>
+																<td colspan="1" align="left" valign="bottom"><h4>
+																		<img alt="正常"
+																			src="../static/image/database_online.png"
+																			style="width: 30px; height: 30px;"> <b>&nbsp;&nbsp;HRMIS</b>
+																	</h4></td>
+															</tr>
+															<tr>
+																<td>类型：</td>
+																<td>神通数据库</td>
+															</tr>
+															<tr>
+																<td>操作系统：</td>
+																<td>SunOS 5.9</td>
+															</tr>
+															<tr>
+																<td>IP地址：</td>
+																<td>192.168.0.10</td>
+															</tr>
+															<tr>
+																<td>执行时间：</td>
+																<td>2015年10月10号</td>
+															</tr>
+															<tr>
+																<td>运行时间：</td>
+																<td>100天</td>
+															</tr>
+															<tr>
+																<td>版本信息：</td>
+																<td>神通数据库7.0</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel panel-info" id="systemInfo">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" href="#softCollapse">系统信息</a>
+												</h4>
+											</div>
+											<div id="softCollapse" class="panel-collapse collapse in">
+												<div class="panel-body">
+													<div class="col-sm-6" id="graph0"
+														style="height: 100px; height: 120px;" class="widget-body"></div>
+													<div class="col-sm-6" id="graph1"
+														style="height: 100px; height: 120px;" class="widget-body"></div>
+													<div class="col-sm-12" id="graph2" style="height: 150px;"
+														class="widget-body"></div>
+													<div class="col-sm-12" style="text-align: center;">
+														<h5>物理内存：2048MB</h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-warning"
+																role="progressbar" aria-valuenow="60" aria-valuemin="0"
+																aria-valuemax="100" style="width: 60%">1175MB(60%)</div>
+														</div>
+														<h5>神通DB内存：1000MB</h5>
+														<div class="progress">
+															<div class="progress-bar progress-bar-success"
+																role="progressbar" aria-valuenow="30" aria-valuemin="0"
+																aria-valuemax="100" style="width: 30%"">300MB(30%)</div>
+														</div>
+													</div>
+													<div class="col-sm-12" id="graph3" style="height: 150px;"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-8">
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="panel panel-info" id="sessionInfo">
+													<div class="panel-heading">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" href="#connect">连接数</a>
+														</h4>
+														<div id="active_session" style="height: 150px;"></div>
+													</div>
+													<div id="connect" class="panel-collapse collapse in">
+														<div class="panel-body">
+															<table class="table">
+																<thead>
+																	<tr>
+																		<th style="text-align: center;">用户名</th>
+																		<th style="text-align: center;">连接时间</th>
+																		<th style="text-align: center;">连接地址</th>
+																		<th style="text-align: center;">客户端应用程序</th>
+																		<th style="text-align: center;">状态</th>
+																	</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td style="text-align: center;">USER-20150728PS</td>
+																		<td style="text-align: center;">2016-03-22
+																			20:03:26</td>
+																		<td style="text-align: center;">192.168.19.208</td>
+																		<td style="text-align: center;">java.exe</td>
+																		<td style="text-align: center;">ACTIVE</td>
+																	</tr>
+																	<tr>
+																		<td style="text-align: center;">PC-20140928</td>
+																		<td style="text-align: center;">2016-03-22
+																			20:03:26</td>
+																		<td style="text-align: center;">192.168.2.21</td>
+																		<td style="text-align: center;">java.exe</td>
+																		<td style="text-align: center;">ACTIVE</td>
+																	</tr>
+																	<tr>
+																		<td style="text-align: center;">USER-20150728PS</td>
+																		<td style="text-align: center;">2016-03-22
+																			20:03:26</td>
+																		<td style="text-align: center;">local machine</td>
+																		<td style="text-align: center;">java.exe</td>
+																		<td style="text-align: center;">ACTIVE</td>
+																	</tr>
+																	<tr>
+																		<td style="text-align: center;">USER-20150728PS</td>
+																		<td style="text-align: center;">2016-03-22
+																			20:03:26</td>
+																		<td style="text-align: center;">192.168.19.208</td>
+																		<td style="text-align: center;">performance
+																			monitoring tool</td>
+																		<td style="text-align: center;">ACTIVE</td>
+																	</tr>
+																	<tr>
+																		<td style="text-align: center;">PC-20140928</td>
+																		<td style="text-align: center;">2016-03-22
+																			20:03:26</td>
+																		<td style="text-align: center;">192.168.2.21</td>
+																		<td style="text-align: center;">performance
+																			monitoring tool</td>
+																		<td style="text-align: center;">SNIPED</td>
+																	</tr>
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="panel panel-info" id="sessionInfo">
+													<div class="panel-heading">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" href="#SQL">SQL查询</a>
+														</h4>
+													</div>
+													<div id="SQL" class="panel-collapse collapse in">
+														<table style="width: 100%" class="table  table-striped">
+															<thead>
+																<h4 align="center" style="height: 35px">运行时间最长的SQL语句TOP5</h4>
+															</thead>
+															<tbody>
+																<tr>
+																	<th style="height: 35px">序号</th>
+																	<th>时长（秒）</th>
+																	<th>SQL</th>
+																</tr>
+																<tr>
+																	<td>1</td>
+																	<td>0.214</td>
+																	<td><a href="#" data-toggle="modal"
+																		data-target="#detailInfo_Modal">详细</a></td>
+																</tr>
+																<tr>
+																	<td>2</td>
+																	<td>0.139</td>
+																	<td><a href="#" data-toggle="modal"
+																		data-target="#detailInfo_Modal">详细</a></td>
+																</tr>
+																<tr>
+																	<td>3</td>
+																	<td>0.137</td>
+																	<td><a href="#" data-toggle="modal"
+																		data-target="#detailInfo_Modal">详细</a></td>
+																</tr>
+																<td>4</td>
+																<td>0.137</td>
+																<td><a href="#" data-toggle="modal"
+																	data-target="#detailInfo_Modal">详细</a></td>
+																</tr>
+																<td style="height: 85px">5</td>
+																<td>0.137</td>
+																<td><a href="#" data-toggle="modal"
+																	data-target="#detailInfo_Modal">详细</a></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="panel panel-info" id="dataSpaceInfo">
+													<div class="panel-heading">
+														<h4 class="panel-title">
+															<a data-toggle="collapse" href="#systermcache"> 系统缓存</a>
+														</h4>
+													</div>
+													<div id="systermcache" class="panel-collapse collapse in">
+														<div class="panel-body">
+															<ul id="buffercache" class="nav nav-tabs">
+																<li class="active"><a href="#spc" data-toggle="tab">SPC执行计划缓存统计信息</a></li>
+																<li><a href="#buffer" data-toggle="tab">BUFFER
+																		CACHE</a></li>
+															</ul>
+															<div id="buffercacheTabContent" class="tab-content">
+																<div class="tab-pane fade in active" id="spc">
+																	<div style="height: 150px;" id="spc_chart"></div>
+																	<table style="width: 100%;" class="table">
+																		<tr style="height: 45px">
+																			<th>缓存请求次数</th>
+																			<th>缓存命中次数</th>
+																			<th>缓存命中失败次数</th>
+																		</tr>
+																		<tr>
+																			<td>2</td>
+																			<td>0</td>
+																			<td>2</td>
+																		</tr>
+																	</table>
+																</div>
+																<div class="tab-pane fade in" id="buffer">
+																	<div style="height: 150px;" id="buffer_chart"></div>
+																	<table style="width: 100%;" class="table">
+																		<tr style="height: 45px">
+																			<th>DB BLOCK GETS</th>
+																			<th>DB BLOCK GETS FROM CACHE</th>
+																		</tr>
+																		<tr>
+																			<td>9056697</td>
+																			<td>9056216</td>
+																		</tr>
+																	</table>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="panel panel-info" id="dataSpaceInfo">
+											<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" href="#tableSpaceCollapse">
+														数据库空间</a>
+												</h4>
+											</div>
+											<div id="tableSpaceCollapse"
+												class="panel-collapse collapse in">
+												<div class="panel-body">
+													<table class="table">
+														<tr style="height: 45px">
+															<th>表空间名字</th>
+															<th>表空间大小</th>
+															<th>使用表空间大小</th>
+															<th>剩余表空间</th>
+															<th>表空间文件位置</th>
+															<th>表空间使用率</th>
+														</tr>
+														<tr>
+															<td>SYSTERM</td>
+															<td>100.0MB</td>
+															<td>19.0MB</td>
+															<td>81MB</td>
+															<td>d:/ShenTong/odbs/OSRDB/OSRDB01temp.dbf</td>
+															<td><div class="progress">
+																	<div class="progress-bar progress-bar-success"
+																		role="progressbar" aria-valuenow="20"
+																		aria-valuemin="0" aria-valuemax="100"
+																		style="width: 19.19%;">19.19%</div>
+																</div></td>
+														</tr>
+														<tr>
+															<td>TEMP</td>
+															<td>100.0MB</td>
+															<td>19.0MB</td>
+															<td>81MB</td>
+															<td>d:/ShenTong/odbs/OSRDB/OSRDB01.dbf</td>
+															<td><div class="progress">
+																	<div class="progress-bar progress-bar-success"
+																		role="progressbar" aria-valuenow="20"
+																		aria-valuemin="0" aria-valuemax="100"
+																		style="width: 19.19%;">19.19%</div>
+																</div></td>
+														</tr>
+														<tr>
+															<td>AUDIT</td>
+															<td>100.0MB</td>
+															<td>19.0MB</td>
+															<td>81MB</td>
+															<td>d:/ShenTong/odbs/OSRDB/OSRDBaux01.dbf</td>
+															<td><div class="progress">
+																	<div class="progress-bar progress-bar-success"
+																		role="progressbar" aria-valuenow="20"
+																		aria-valuemin="0" aria-valuemax="100"
+																		style="width: 19.19%;">19.19%</div>
+																</div></td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="cursor_modal" tabindex="-1"
+									role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title" id="myModalLabel">游标记录表</h4>
+											</div>
+											<div class="modal-body">
+												<table class="table table-striped table-condensed">
+													<tbody>
+														<!-- <tr>
+															<td align="center" style="font-weight: bold">当前游标数</td>
+														</tr> -->
+														<tr>
+															<td width="100%" align="center"><div
+																	id="current_cursor" style="height: 165px; width: 400px"></div></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">关闭</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal fade" id="sessionNum_Modal" tabindex="-1"
+									role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title" id="myModalLabel">会话记录表</h4>
+											</div>
+											<div class="modal-body">
+												<table class="table table-striped table-condensed">
+													<tbody>
+														<tr>
+															<td align="center"><div id="currentSessionNum"
+																	style="height: 165px; width: 400px;"></div></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">关闭</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal fade" id="detailInfo_Modal" tabindex="-1"
+									role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title" id="myModalLabel">详细信息</h4>
+											</div>
+											<div class="modal-body">select 'DEFAULT'
+												BUFFER_POOL_NAME, sum(DECODE(NAME,'session logical
+												reads',value,0)) Consistent, sum(DECODE(NAME,'physical
+												reads',value,0)) physrds, sum(DECODE(NAME,'physical reads
+												direct',value,0)) physrdsdir, sum(DECODE(NAME,'physical
+												reads direct(lob)',value,0)) physrdslob,
+												ROUND(((sum(DECODE(NAME,'session logical reads',value,0))-
+												sum(DECODE(NAME,'physical reads',value,0))
+												+sum(DECODE(NAME,'physical reads direct',value,0))
+												+sum(DECODE(NAME,'physical reads direct(lob)',value,0)))/
+												(sum(DECODE(NAME,'session logical reads',value,0))))*100,2)
+												HITRATIO from V$SYSSTAT</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="relevance_application"
+						style="text-align: center;">
+						<button class="btn btn-default"
+							onclick="window.open('topo.html');"
+							style="position: absolute; x: 0; y: 0">编辑</button>
+						<img alt="应用2" src="../static/image/app.bmp">
+					</div>
+					<div class="tab-pane fade" id="network_topology"
+						style="text-align: center;">
+						<img alt="关联网络拓扑" src="../static/image/net.bmp">
+					</div>
+					<div class="tab-pane fade" id="physical_location">
+						<p>济南-->机房1-->机柜2</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	// 路径配置
+	require.config({
+		paths : {
+			echarts : '../static/echarts/build/dist'
+		}
+	});
+
+	// 使用
+	require([ 'echarts', 'echarts/chart/gauge', 'echarts/chart/line',
+			'echarts/chart/pie' // 使用柱状图就加载bar模块，按需加载
+	], function(ec) {
+		//CPU利用率折线
+		var myChart2 = ec.init(document.getElementById('graph2'));
+		//内存利用率折线
+		var myChart3 = ec.init(document.getElementById('graph3'));
+		var option2 = {
+			title : {
+				text : 'CPU使用记录',
+				x : 'center',
+				textStyle : {
+					fontSize : 14,
+				}
+			},
+			tooltip : {
+				trigger : 'axis'
+			},
+			calculable : true,
+			xAxis : [ {
+				type : 'category',
+				boundaryGap : false,
+				data : [ '0', '4', '8', '12', '16', '20', '24' ]
+			} ],
+			yAxis : [ {
+				type : 'value',
+				axisLabel : {
+					formatter : '{value} %'
+				}
+			} ],
+			grid : {
+				x : '40 px',
+				y : '30 px',
+				x2 : '35 px',
+			},
+			series : [ {
+				name : '神通',
+				type : 'line',
+				data : [ 10, 30, 20, 50, 30, 70, 10 ],
+			}, {
+				name : '主机',
+				type : 'line',
+				data : [ 20, 30, 30, 20, 30, 20, 30 ],
+			} ]
+		};
+		var option3 = {
+			title : {
+				text : '内存使用记录',
+				x : 'center',
+				textStyle : {
+					fontSize : 14,
+				}
+			},
+			tooltip : {
+				trigger : 'axis'
+			},
+			calculable : true,
+			xAxis : [ {
+				type : 'category',
+				boundaryGap : false,
+				data : [ '0', '4', '8', '12', '16', '20', '24' ]
+			} ],
+			yAxis : [ {
+				type : 'value',
+				axisLabel : {
+					formatter : '{value} %'
+				}
+			} ],
+			grid : {
+				x : '40 px',
+				y : '30 px',
+				x2 : '35 px',
+
+			},
+			series : [ {
+				name : '神通',
+				type : 'line',
+				data : [ 10, 70, 50, 80, 60, 50, 20 ],
+			}, {
+				name : '主机',
+				type : 'line',
+				data : [ 20, 30, 30, 20, 30, 20, 30 ],
+			} ]
+		};
+		myChart2.setOption(option2);
+		myChart3.setOption(option3);
+
+		//spc图表
+		var spc_chart = ec.init(document.getElementById('spc_chart'));
+		option_spc = {
+			title : {
+				text : '',
+				x : 'center',
+				textStyle : {
+					fontSize : 14,
+				}
+			},
+			tooltip : {
+				trigger : 'axis'
+			},
+			grid : {
+				x : '40 px',
+				y : '30 px',
+				x2 : '15 px',
+				y2 : '30px',
+			},
+			xAxis : [ {
+				type : 'category',
+				boundaryGap : false,
+				splitNum : '10',
+				data : [ '0:00', '1:00', '2:00', '3:00', '4:00', '5:00',
+						'6:00', '7:00', '8:00', '9:00', '10:00', '11:00',
+						'12:00', '13:00', '14:00', '15:00', '16:00', '17:00',
+						'18:00', '19:00', '20:00', '21:00', '22:00', '23:00',
+						'24:00' ]
+			} ],
+			yAxis : [ {
+				type : 'value',
+				axisLabel : {
+					formatter : '{value}'
+				}
+			} ],
+			series : [ {
+				name : '命中率',
+				type : 'line',
+				data : [ 0, 0, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2,
+						0.2, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5,
+						0.5, 0.5, 0.5 ]
+			} ]
+		};
+		spc_chart.setOption(option_spc);
+
+		//buffer cache图表
+		var buffer_chart = ec.init(document.getElementById('buffer_chart'));
+		option_buffer = {
+			title : {
+				text : '',
+				x : 'center',
+				textStyle : {
+					fontSize : 14,
+				}
+			},
+			tooltip : {
+				trigger : 'axis'
+			},
+			grid : {
+				x : '40 px',
+				y : '30 px',
+				x2 : '15 px',
+				y2 : '30px',
+			},
+			xAxis : [ {
+				type : 'category',
+				boundaryGap : false,
+				splitNum : '10',
+				data : [ '0:00', '1:00', '2:00', '3:00', '4:00', '5:00',
+						'6:00', '7:00', '8:00', '9:00', '10:00', '11:00',
+						'12:00', '13:00', '14:00', '15:00', '16:00', '17:00',
+						'18:00', '19:00', '20:00', '21:00', '22:00', '23:00',
+						'24:00' ]
+			} ],
+			yAxis : [ {
+				type : 'value',
+				axisLabel : {
+					formatter : '{value}'
+				}
+			} ],
+			series : [ {
+				name : '命中率',
+				type : 'line',
+				data : [ 0, 0, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2,
+						0.2, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5,
+						0.5, 0.5, 0.5 ]
+			} ]
+		};
+		buffer_chart.setOption(option_buffer);
+
+		//连接数图表
+		var activeSession = ec.init(document.getElementById('active_session'));
+		option_session = {
+			title : {
+				text : '',
+				x : 'center',
+				textStyle : {
+					fontSize : 14,
+				}
+			},
+			tooltip : {
+				trigger : 'axis'
+			},
+			grid : {
+				x : '40 px',
+				y : '30 px',
+				x2 : '15 px',
+				y2 : '30px',
+			},
+			xAxis : [ {
+				type : 'category',
+				boundaryGap : false,
+				splitNum : '10',
+				data : [ '0:00', '1:00', '2:00', '3:00', '4:00', '5:00',
+						'6:00', '7:00', '8:00', '9:00', '10:00', '11:00',
+						'12:00', '13:00', '14:00', '15:00', '16:00', '17:00',
+						'18:00', '19:00', '20:00', '21:00', '22:00', '23:00',
+						'24:00' ]
+			} ],
+			yAxis : [ {
+				type : 'value',
+				axisLabel : {
+					formatter : '{value}'
+				}
+			} ],
+			series : [ {
+				name : '连接数',
+				type : 'line',
+				data : [ 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4,
+						4, 4, 4, 4, 5, 5, 5 ]
+			} ]
+		};
+		activeSession.setOption(option_session);
+		//CPU利用率环形
+		var myChart_graph0 = ec.init(document.getElementById('graph0'));
+		//内存利用率环形
+		var myChart_graph1 = ec.init(document.getElementById('graph1'));
+		option_graph0 = {
+			title : {
+				text : '主机CPU利用率',
+				x : 'center',
+				y : '10px',
+				textStyle : {
+					fontSize : 14,
+				}
+			},
+			series : [ {
+				name : 'CPU平均利用率',
+				type : 'gauge',
+				splitNumber : 4, // 分割段数，默认为5
+				axisLine : { // 坐标轴线
+					lineStyle : { // 属性lineStyle控制线条样式
+						color : [ [ 0.2, '#228b22' ], [ 0.8, '#48b' ],
+								[ 1, '#ff4500' ] ],
+						width : 8
+					}
+				},
+				axisTick : { // 坐标轴小标记
+					splitNumber : 10, // 每份split细分多少段
+					length : 10, // 属性length控制线长
+					lineStyle : { // 属性lineStyle控制线条样式
+						color : 'auto'
+					}
+				},
+				axisLabel : { // 坐标轴文本标签，详见axis.axisLabel
+					show : true,
+					textStyle : { // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+						color : 'auto',
+						fontSize : 10,
+					}
+				},
+				splitLine : { // 分隔线
+					show : true, // 默认显示，属性show控制显示与否
+					length : 15, // 属性length控制线长
+					lineStyle : { // 属性lineStyle（详见lineStyle）控制线条样式
+						color : 'auto'
+					}
+				},
+				pointer : {
+					width : 3
+				},
+				title : {
+					show : true,
+					offsetCenter : [ 0, '-40%' ], // x, y，单位px
+					textStyle : { // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+						fontWeight : 'bolder'
+					}
+				},
+				detail : {
+					formatter : '{value}%',
+					textStyle : { // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+						color : 'auto',
+						fontSize : 20,
+						fontWeight : 'bolder'
+					}
+				},
+				data : [ {
+					value : 30
+				} ]
+			} ]
+		};
+		option_graph1 = {
+			title : {
+				text : '神通 CPU利用率',
+				x : 'center',
+				y : '10px',
+				textStyle : {
+					fontSize : 14,
+				}
+			},
+			series : [ {
+				name : 'CPU平均利用率',
+				type : 'gauge',
+				splitNumber : 4, // 分割段数，默认为5
+				axisLine : { // 坐标轴线
+					lineStyle : { // 属性lineStyle控制线条样式
+						color : [ [ 0.2, '#228b22' ], [ 0.8, '#48b' ],
+								[ 1, '#ff4500' ] ],
+						width : 8
+					}
+				},
+				axisTick : { // 坐标轴小标记
+					splitNumber : 10, // 每份split细分多少段
+					length : 10, // 属性length控制线长
+					lineStyle : { // 属性lineStyle控制线条样式
+						color : 'auto'
+					}
+				},
+				axisLabel : { // 坐标轴文本标签，详见axis.axisLabel
+					show : true,
+					interval : '50',
+					margin : '0px',
+					textStyle : { // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+						color : 'auto',
+						fontSize : 10,
+					}
+				},
+				splitLine : { // 分隔线
+					show : true, // 默认显示，属性show控制显示与否
+					length : 15, // 属性length控制线长
+					lineStyle : { // 属性lineStyle（详见lineStyle）控制线条样式
+						color : 'auto'
+					}
+				},
+				pointer : {
+					width : 3
+				},
+				title : {
+					show : true,
+					offsetCenter : [ 0, '-40%' ], // x, y，单位px
+					textStyle : { // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+						fontWeight : 'bolder'
+					}
+				},
+				detail : {
+					formatter : '{value}%',
+					textStyle : { // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+						color : 'auto',
+						fontSize : 20,
+						fontWeight : 'bolder'
+					}
+				},
+				data : [ {
+					value : 10
+				} ]
+			} ]
+		};
+		//CPU利用率环形
+		myChart_graph0.setOption(option_graph0);
+		//内存利用率环形
+		myChart_graph1.setOption(option_graph1);
+
+		//重置图形大小
+		window.addEventListener("resize", function() {
+			currentSessionNum.resize();
+			currentCursorNum.resize();
+			myChart_graph0.resize();
+			myChart_graph1.resize();
+			myChart_labelTop.resize();
+			myChart2.resize();
+			myChart3.resize();
+		});
+
+		$('#tableSpaceFile').on('shown.bs.modal', function() {
+			myChart_labelTop.resize();
+		})
+	});
+</script>
+</html>

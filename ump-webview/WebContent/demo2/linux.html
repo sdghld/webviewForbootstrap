@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<link href="../static/bootstrap/3.3.5/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="../static/common/common.css" rel="stylesheet">
+<title>Linux 服务器</title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">统一监控平台</a>
+			</div>
+			<div id="navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#">概况</a></li>
+					<li><a href="net.html">网络</a></li>
+					<li><a href="deploy.html">部署</a></li>
+					<li><a href="workspaceApp.html">应用</a></li>
+					<li><a href="#">告警</a></li>
+					<li class="active"><a href="windows.html">资源</a></li>
+					<li><a href="#">系统</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">帮助</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">Administrator<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">个人信息</a></li>
+							<li><a href="#">修改密码</a></li>
+							<li><a href="#">个性化</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">注销</a></li>
+						</ul></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="tree tab-content">
+					<ul class="tree-node-1">
+						<li><a href="#"><img src="../static/image/open.gif"><img
+								src="../static/image/server.png"> <span>数据库 </span> </a>
+							<ul class="tree-node-2">
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>Oracle </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="newOracleDB.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/database_online.png"> <span>HRMIS</span>
+										</a></li>
+									</ul></li>
+							</ul></li>
+						<li><a href="#"><img src="../static/image/open.gif"><img
+								src="../static/image/server.png"> <span>服务器</span> </a>
+							<ul class="tree-node-2">
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>Windows </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="windows.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/enable_server.png"> <span>hrmis
+											</span> </a></li>
+									</ul></li>
+
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>Linux </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="linux.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/server.png"> <span>Linux_1</span>
+										</a></li>
+									</ul></li>
+							</ul></li>
+						<li><a href="#"><img src="../static/image/open.gif"><img
+								src="../static/image/server.png"> <span>应用服务器</span> </a>
+							<ul class="tree-node-2">
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>AS </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="appserver.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/AS.png"> <span>AS服务器</span> </a></li>
+									</ul></li>
+
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>Websphere
+									</span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="websphere.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/server.png"> <span>websphere_1</span>
+										</a></li>
+
+									</ul></li>
+							</ul></li>
+
+						<li><a href="#"><img src="../static/image/open.gif"><img
+								src="../static/image/server.png"> <span>网络设备</span> </a>
+							<ul class="tree-node-2">
+
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>交换机</span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="switch.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/switch_normal.png"> <span>交换机_1</span>
+										</a></li>
+									</ul></li>
+							</ul></li>
+						<li><ul class="tree-node-2">
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>路由器 </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="router.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/server.png"> <span>路由器_1</span> </a></li>
+									</ul></li>
+							</ul></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<ul class="navbar-right list-inline" style="padding-right: 20px;">
+					<li><a href="#"><div class="tool_bar">
+								<table>
+									<tr>
+										<td><a onclick="popup()" href="#"><img
+												src="../static/image/ping.jpg" alt="PING"
+												data-toggle="tooltip" data-placement="top" title="PING" /></a>&nbsp;&nbsp;&nbsp;</td>
+										<td><a onclick="popup5() " href="#"><img
+												data-toggle="tooltip" data-placement="top"
+												src="../static/image/snmp.png" alt="SNMP连接测试"
+												title="SNMP连接测试" /></a> &nbsp;&nbsp;&nbsp;</td>
+										<td><a href="#" onclick="popup1()"><img
+												data-toggle="tooltip" data-placement="top"
+												src="../static/image/traceroute.png" alt="TRACEROUTE"
+												title="TRACEROUTE" /></a> &nbsp;&nbsp;&nbsp;</td>
+										<td><a href="#" onclick="popup2()"> <img
+												data-toggle="tooltip" data-placement="top"
+												src="../static/image/tcp.png" alt="TCP端口连接测试"
+												title="TCP端口连接测试" />
+										</a> &nbsp;&nbsp;&nbsp;</td>
+									</tr>
+								</table>
+							</div></a></li>
+				</ul>
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#all_Info" data-toggle="tab">指标一览</a></li>
+					<li><a href="#network_topology" data-toggle="tab">网络拓扑</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">关联应用<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="#relevance_application" data-toggle="tab">数字神经</a></li>
+							<li><a href="#relevance_application" data-toggle="tab">打印系统</a></li>
+						</ul></li>
+					<li><a href="#physical_location" data-toggle="tab">物理位置</a></li>
+					<li><a href="" data-toggle="tab">告警</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="all_Info">
+						<div class="container"
+							style="width: 100%; height: 100%; padding-top: 20px;">
+							<div class="page-content">
+								<div class="row">
+									<div class="col-md-3" style="padding: 0">
+										<div class="panel-group" id="accordion">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion"
+															href="#infoCollapse">基本信息</a>
+													</h4>
+												</div>
+												<div id="infoCollapse" class="panel-collapse collapse in">
+													<table class="table">
+														<tbody>
+															<tr>
+																<td colspan="2"><h4 align="center">
+																		<img alt="正常" src="../static/image/enable_server.png"
+																			style="width: 30px; height: 30px;"> <b>&nbsp;&nbsp;&nbsp;Linux服务器</b>
+																	</h4></td>
+															</tr>
+															<tr>
+																<td>操作系统：</td>
+																<td>Linux</td>
+															</tr>
+															<tr>
+																<td>版本信息：</td>
+																<td>Red Hat Enterprise Linux</td>
+															</tr>
+															<tr>
+																<td>IP地址：</td>
+																<td>192.168.19.111</td>
+															</tr>
+															<tr>
+																<td>运行时长：</td>
+																<td>1天4小时54分钟33秒</td>
+															</tr>
+															<tr>
+																<td colspan="2" align="right"><a href="#"
+																	data-toggle="modal" data-target="#detailInfo_Modal">详细</a></td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+										<div class="panel-group">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" href="#process">进程信息</a>
+													</h4>
+												</div>
+												<div class="panel-body">
+													<div id="process" class="panel-collapse collapse in">
+														<div style="margin-bottom: 10px; text-align: center;">
+															<h4>等待处理队列</h4>
+														</div>
+														<div class="progress" style="margin: 20px 20px 40px 20px;">
+															<div
+																class="progress-bar progress-bar-success progress-bar-striped active"
+																role="progressbar" aria-valuenow="40" aria-valuemin="0"
+																aria-valuemax="100" style="width: 40%">12</div>
+														</div>
+														<table>
+															<tr>
+																<td align="center" style="font-weight: bold;">进程数</td>
+																<!-- 																<td align="center" style="font-weight: bold;">线程数</td> -->
+																<!-- 																<td align="center" style="font-weight: bold;">句柄数</td> -->
+															</tr>
+															<tr>
+																<td width="33%"><div class="bg_ellipse_green"
+																		style="background-size: 35%;">
+																		<h4>55</h4>
+																	</div></td>
+																<!-- 																<td width="33%"><div class="bg_ellipse_green" -->
+																<!-- 																		style="background-size: 95%;"> -->
+																<!-- 																		<h4>884</h4></td> -->
+																<!-- 																<td width="33%"><div class="bg_ellipse_green" -->
+																<!-- 																		style="background-size: 95%;"> -->
+																<!-- 																		<h4>9228</h4></td> -->
+															</tr>
+															<tr>
+																<td colspan="3">
+																	<!-- 																	<ul id="myTab" class="nav nav-tabs nav-justified"> -->
+																	<!-- 																		<li class="active"><a href="#processLine" -->
+																	<!-- 																			data-toggle="tab">进程趋势</a></li> -->
+																	<!-- 																		<li><a href="#threadLine" data-toggle="tab">线程趋势</a></li> -->
+																	<!-- 																		<li><a href="#handleLine" data-toggle="tab">句柄趋势</a></li> -->
+																	<!-- 																	</ul> -->
+																	<div id="myTabContent" class="tab-content">
+																		<div class="tab-pane fade in active" id="processLine">
+																			<div id="graph6"
+																				style="height: 120px; width: 100%; overflow: hidden;"></div>
+																		</div>
+																		<div class="tab-pane fade" id="threadLine">
+																			<div id="graph3"
+																				style="height: 120px; width: 300px; overflow: hidden;"></div>
+																		</div>
+																		<div class="tab-pane fade" id="handleLine">
+																			<div id="graph5"
+																				style="height: 120px; width: 300px; overflow: hidden;"></div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td colspan="3">
+																	<h5 style="text-align: right; margin: 0">
+																		<a href="#" data-toggle="modal"
+																			data-target="#process_Modal">详细</a>
+																	</h5>
+																</td>
+															</tr>
+														</table>
+														<!-- <a data-toggle="collapse" data-parent="#accordion"
+															href="#processThree">展开 </a> -->
+														<!-- 	<div id="processThree" class="collapse"> -->
+													</div>
+
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="panel-group">
+											<div class="panel panel-info" style="margin-bottom: 0">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" href="#indexCollapse">指标信息</a>
+													</h4>
+												</div>
+												<div id="indexCollapse" class="panel-collapse collapse in">
+													<div class="panel-body">
+														<div class="col-md-12">
+															<div class="col-md-6">
+																<h4
+																	style="font-size: 14px; font-weight: bold; text-align: center;">CPU平均利用率</h4>
+																<div id="graph0"
+																	style="margin-top: -15px; height: 125px;"
+																	class="widget-body"></div>
+															</div>
+															<div class="col-md-6">
+																<!-- <button type="button" class="btn btn-primary"
+																style="text-shadow: black 5px 3px 3px;margin-top: 68px;margin-left: 30px;">
+																<span class="glyphicon glyphicon-time"></span>&nbsp;CPU个数:&nbsp;2
+															</button> -->
+																<div
+																	style="font-size: 14px; font-weight: bold; margin-top: 8px; text-align: center;">内核数</div>
+																<div class="bg_ellipse_gray"
+																	style="background-size: 110px; margin-top: 22px;">
+																	<a style="color: black" href="#" data-toggle="modal"
+																		data-target="#core_Modal"><h3>4</h3></a>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-12">
+															<div class="col-md-6">
+																<h5>物理内存：2048MB</h5>
+																<div class="progress">
+																	<div class="progress-bar progress-bar-warning"
+																		role="progressbar" aria-valuenow="60"
+																		aria-valuemin="0" aria-valuemax="100"
+																		style="width: 60%">1228.8MB(60%)</div>
+																</div>
+															</div>
+															<div class="col-md-6">
+																<h5>虚拟内存：1500MB</h5>
+																<div class="progress">
+																	<div class="progress-bar progress-bar-success"
+																		role="progressbar" aria-valuenow="30"
+																		aria-valuemin="0" aria-valuemax="100"
+																		style="width: 30%">450MB(30%)</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-md-12">
+															<div class="collapse navbar-collapse"
+																style="float: right" id="bs-example-navbar-collapse-1">
+																<ul class="nav navbar-nav">
+																	<li class="dropdown" id="dropdownMenuTime"><a
+																		style="padding: 0;" href="#" id="myTabDrop1"
+																		class="dropdown-toggle" data-toggle="dropdown">最近1小时
+																			<b class="caret"></b>
+																	</a>
+																		<ul class="dropdown-menu" role="menu"
+																			aria-labelledby="myTabDrop1">
+																			<li><a href="#last15min" tabindex="-1"
+																				class="lastInfo" data-toggle="tab"> 最近15分钟</a></li>
+																			<li><a href="#lasthour" tabindex="-1"
+																				class="lastInfo" data-toggle="tab"> 最近1小时</a></li>
+																			<li><a href="#lastday" tabindex="-1"
+																				class="lastInfo" data-toggle="tab"> 最近1天</a></li>
+																		</ul></li>
+
+																</ul>
+															</div>
+														</div>
+														<div class="col-md-12">
+															<div id="myTabContent" class="tab-content">
+																<div id="last15min" class="tab-pane fade">
+																	<div id="graph_last15min" style="height: 165px;"></div>
+																</div>
+																<div id="lasthour" class="tab-pane fade in active">
+																	<div id="graph_lastOneHour" style="height: 165px;"></div>
+																</div>
+																<div id="lastday" class="tab-pane fade">
+																	<div id="graph_lastOneDay" style="height: 165px;"></div>
+																</div>
+															</div>
+														</div>
+														<div id="graph1" hidden="true"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- 										<div class="row" style="text-align: center;"> -->
+										<!-- 											<div class="col-md-6"> -->
+										<!-- 												322011 byte/s <img src="../static/image/arrow_up.png" -->
+										<!-- 													style="width: 20px; height: 20px;" alt="状态正常" title="状态正常"> -->
+										<!-- 											</div> -->
+										<!-- 											<div class="col-md-6"> -->
+										<!-- 												<img src="../static/image/arrow_down.png" -->
+										<!-- 													style="width: 20px; height: 20px;" alt="状态正常" title="状态正常"> -->
+										<!-- 												122011 byte/s -->
+										<!-- 											</div> -->
+										<!-- 										</div> -->
+										<div class="panel-group">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" href="#diskCollapse"> 磁盘信息</a>
+													</h4>
+												</div>
+												<div id="diskCollapse" class="panel-collapse collapse in">
+													<div class="panel-body container-fluid">
+														<table style="width: 100%;">
+															<tr>
+																<td width="80px;">/:&nbsp;</td>
+																<td width="300px;"><div class="progress"
+																		style="margin: 0;">
+																		<div class="progress-bar progress-bar-warning"
+																			role="progressbar" aria-valuenow="60"
+																			aria-valuemin="0" aria-valuemax="100"
+																			style="width: 60%;">60%</div>
+																	</div></td>
+																<td width="200px;">
+																	<h5 style="padding-left: 10px;">4GB可用，共10GB</h5>
+																</td>
+															</tr>
+															<tr>
+																<td>/home:&nbsp;</td>
+																<td width="200px;"><div class="progress"
+																		style="margin: 0;">
+																		<div class="progress-bar progress-bar-success"
+																			role="progressbar" aria-valuenow="20"
+																			aria-valuemin="0" aria-valuemax="100"
+																			style="width: 20%;">20%</div>
+																	</div></td>
+																<td>
+																	<h5 style="padding-left: 10px;">8GB可用，共10GB</h5>
+																</td>
+															</tr>
+															<tr>
+																<td>/user:&nbsp;</td>
+																<td width="200px;"><div class="progress"
+																		style="margin: 0;">
+																		<div class="progress-bar progress-bar-danger"
+																			role="progressbar" aria-valuenow="90"
+																			aria-valuemin="0" aria-valuemax="100"
+																			style="width: 90%;">90%</div>
+																	</div></td>
+																<td>
+																	<h5 style="padding-left: 10px;">1GB可用，共10GB</h5>
+																</td>
+															</tr>
+														</table>
+														<h5 style="text-align: right;">
+															<a href="#" data-toggle="modal"
+																data-target="#moreDisk_Modal">更多</a>
+														</h5>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="panel-group">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" href="#network">网络信息</a>
+													</h4>
+												</div>
+												<div id="network" class="panel-collapse collapse in">
+													<div class="panel-body" style="text-align: right;">
+														<div style="margin-bottom: 10px; text-align: center;">
+															<h4>网络I/O</h4>
+														</div>
+														<div class="progress"
+															style="width: 80%; margin-left: 10%;">
+															<div
+																class="progress-bar progress-bar-success progress-bar-striped active"
+																role="progressbar" aria-valuenow="40" aria-valuemin="0"
+																aria-valuemax="100" style="width: 40%">12kbps</div>
+														</div>
+														<div id="graph7" style="height: 160px; overflow: hidden;"></div>
+														<hr style="margin: 5px auto;">
+														<div style="text-align: center;">
+															<h4 style="margin: 5px;">TCP连接数</h4>
+														</div>
+														<div class="bg_ellipse_green">
+															<h3>45</h3>
+														</div>
+														<div id="graph8" style="height: 160px; overflow: hidden;"></div>
+														<a href="#" title="点击查看详细信息" data-toggle="modal"
+															data-target="#tcp_model">更多</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="tcp_model" tabindex="-1"
+									role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title" id="myModalLabel">网络接口</h4>
+											</div>
+											<div class="modal-body">
+												<table style="text-align: center;">
+													<tbody>
+														<tr>
+															<td>网络I/O 1</td>
+															<td>TCP连接数 1</td>
+														</tr>
+														<tr>
+															<td>
+																<div id="graph9"
+																	style="height: 160px; width: 280px; overflow: hidden;"></div>
+															</td>
+															<td>
+																<div id="graph10"
+																	style="height: 160px; width: 280px; overflow: hidden;"></div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">关闭</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal fade" id="moreDisk_Modal" tabindex="-1"
+									role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title" id="myModalLabel">更多磁盘信息</h4>
+											</div>
+											<div class="modal-body">
+												<table style="width: 100%;">
+													<tbody>
+														<tr>
+															<td>/data1:&nbsp;</td>
+															<td width="200px;"><div class="progress"
+																	style="margin: 0;">
+																	<div class="progress-bar progress-bar-warning"
+																		role="progressbar" aria-valuenow="50"
+																		aria-valuemin="0" aria-valuemax="100"
+																		style="width: 50%;">50%</div>
+																</div></td>
+															<td>
+																<h5 style="padding-left: 10px;">5GB可用，共10GB</h5>
+															</td>
+														</tr>
+														<tr>
+															<td>/etc:&nbsp;</td>
+															<td width="200px;"><div class="progress"
+																	style="margin: 0;">
+																	<div class="progress-bar progress-bar-danger"
+																		role="progressbar" aria-valuenow="90"
+																		aria-valuemin="0" aria-valuemax="100"
+																		style="width: 90%;">90%</div>
+																</div></td>
+															<td>
+																<h5 style="padding-left: 10px;">2GB可用，共20GB</h5>
+															</td>
+														</tr>
+														<tr>
+															<td>/user:&nbsp;</td>
+															<td width="200px;"><div class="progress"
+																	style="margin: 0;">
+																	<div class="progress-bar progress-bar-warning"
+																		role="progressbar" aria-valuenow="60"
+																		aria-valuemin="0" aria-valuemax="100"
+																		style="width: 60%;">60%</div>
+																</div></td>
+															<td>
+																<h5 style="padding-left: 10px;">8GB可用，共20GB</h5>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal fade" id="detailInfo_Modal" tabindex="-1"
+									role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title" id="myModalLabel">详细信息</h4>
+											</div>
+											<div class="modal-body">
+												<table
+													class="table table-striped table-hover table-condensed">
+													<tbody>
+														<tr>
+															<td style="width: 100px;">内核版本：</td>
+															<td>2.4.21-15.EL</td>
+														</tr>
+														<tr>
+															<td>系统描述：</td>
+															<td>Linux supports a series of development work o
+																UNIX, almost all of the mainstream programming language
+																has been ported to Linux and can get free, such as C, C
+																+ +, Fortran77, ADA, PASCAL, Modual2 and 3,
+																Tcl/TkScheme, SmallTalk/X, etc.</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">关闭</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal fade" id="process_Modal" tabindex="-1"
+									role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title" id="myModalLabel">进程信息</h4>
+											</div>
+											<div class="modal-body">
+												<ul class="nav nav-tabs nav-pills">
+													<li class="active"><a href="#all_process"
+														data-toggle="tab">全部进程</a></li>
+													<li><a href="#main_process" data-toggle="tab">关键进程</a></li>
+												</ul>
+												<div class="tab-content">
+													<div class="tab-pane fade in active" id="all_process">
+														<table
+															class="table table-striped table-hover table-condensed">
+															<thead>
+																<tr>
+																	<th>进程名称</th>
+																	<th>内存(专用工作集)</th>
+																	<th>cpu使用率(%)</th>
+																	<th>线程数</th>
+																	<th>句柄数</th>
+																	<th>操作</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>smss.exe</td>
+																	<td>608K</td>
+																	<td>0.2</td>
+																	<td>63</td>
+																	<td>1224</td>
+																	<td><a href="#">结束</a></td>
+																</tr>
+																<tr>
+																	<td><b>eclipse</b></td>
+																	<td><b>42564K</b></td>
+																	<td><b>10</b></td>
+																	<td><b>50</b></td>
+																	<td><b>1400</b></td>
+																	<td><b><a href="#">结束</a></b></td>
+																</tr>
+																<tr>
+																	<td>TeamViewer.exe</td>
+																	<td>2043K</td>
+																	<td>1.5</td>
+																	<td>89</td>
+																	<td>5059</td>
+																	<td><a href="#">结束</a></td>
+																</tr>
+																<tr>
+																	<td><b>notepad.exe</b></td>
+																	<td><b>304K</b></td>
+																	<td><b>0.9</b></td>
+																	<td><b>30</b></td>
+																	<td><b>406</b></td>
+																	<td><b><a href="#">结束</a></b></td>
+																</tr>
+																<tr>
+																	<td>360tray.exe</td>
+																	<td>1208K</td>
+																	<td>1</td>
+																	<td>9</td>
+																	<td>706</td>
+																	<td><a href="#">结束</a></td>
+																</tr>
+																<tr>
+																	<td><b>explorer.exe</b></td>
+																	<td><b>24165K</b></td>
+																	<td><b>2</b></td>
+																	<td><b>60</b></td>
+																	<td><b>1311</b></td>
+																	<td><b><a href="#">结束</a></b></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="tab-pane fade" id="main_process">
+														<table
+															class="table table-striped table-hover table-condensed">
+															<thead>
+																<tr>
+																	<th>进程名称</th>
+																	<th>内存(专用工作集)</th>
+																	<th>cpu使用率(%)</th>
+																	<th>线程数</th>
+																	<th>句柄数</th>
+																	<th>操作</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>eclipse</td>
+																	<td>42564K</td>
+																	<td>10</td>
+																	<td>50</td>
+																	<td>1400</td>
+																	<td><a href="#">结束</a></td>
+																</tr>
+																<tr>
+																	<td>notepad.exe</td>
+																	<td>304K</td>
+																	<td>0.9</td>
+																	<td>30</td>
+																	<td>406</td>
+																	<td><a href="#">结束</a></td>
+																</tr>
+																<tr>
+																	<td>explorer.exe</td>
+																	<td>24165K</td>
+																	<td>2</td>
+																	<td>60</td>
+																	<td>1311</td>
+																	<td><a href="#">结束</a></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default"
+														data-dismiss="modal">关闭</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal fade" id="core_Modal" tabindex="-1"
+									role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title" id="myModalLabel">CPU详细信息</h4>
+											</div>
+											<div class="modal-body">
+												<table class="table table-striped table-condensed">
+													<tbody>
+														<tr>
+															<td align="center" style="font-weight: bold">CPU 0</td>
+															<td align="center" style="font-weight: bold">CPU 1</td>
+														</tr>
+														<tr>
+															<td width="50%"><div id="core_graph1"
+																	style="height: 165px; width: 100%"></div></td>
+															<td width="50%"><div id="core_graph2"
+																	style="height: 165px; width: 100%"></div></td>
+														</tr>
+														<tr>
+															<td align="center" style="font-weight: bold">CPU 2</td>
+															<td align="center" style="font-weight: bold">CPU 3</td>
+														</tr>
+														<tr>
+															<td width="50%"><div id="core_graph3"
+																	style="height: 165px; width: 100%"></div></td>
+															<td width="50%"><div id="core_graph4"
+																	style="height: 165px; width: 100%"></div></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">关闭</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal fade" id="int_Modal" tabindex="-1"
+									role="dialog" aria-labelledby="myModalLabel">
+									<div class="modal-dialog modal-lg" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"
+													aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												</button>
+												<h4 class="modal-title" id="myModalLabel">网络接口信息</h4>
+											</div>
+											<div class="modal-body">
+												<table
+													class="table table-striped table-hover table-condensed">
+													<thead>
+														<tr>
+															<th>网络接口名称</th>
+															<th>带宽</th>
+															<th>状态</th>
+															<th>接收字节总数</th>
+															<th>发送字节总数</th>
+															<th>接收错误包</th>
+															<th>发送错误包</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>WAN Miniport IPv6</td>
+															<td>1.07Gbps</td>
+															<td>up</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>WAN Miniport Network Monitor</td>
+															<td>1.07Gbps</td>
+															<td>up</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>WAN Miniport IP</td>
+															<td>1.07Gbps</td>
+															<td>up</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>WAN Miniport L2TP</td>
+															<td>1.07Gbps</td>
+															<td>up</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+														<tr>
+															<td>Software Loopback Interface 1</td>
+															<td>1.07Gbps</td>
+															<td>up</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+															<td>0</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default"
+													data-dismiss="modal">关闭</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="relevance_application"
+						style="text-align: center;">
+						<!-- <button class="btn btn-default"
+							onclick="window.open('topo.html');"
+							style="position: absolute; x: 0; y: 0">编辑</button> -->
+						<img alt="应用2" src="../static/image/app.bmp">
+					</div>
+					<div class="tab-pane fade" id="network_topology"
+						style="text-align: center;">
+						<img alt="关联网络拓扑" src="../static/image/net.bmp">
+					</div>
+					<div class="tab-pane fade" id="physical_location">
+						<p>济南-->机房1-->机柜2</p>
+						<img alt="物理位置" src="../static/image/position.bmp">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../static/echarts/build/dist/echarts.js"></script>
+	<script src="../static/jquery/jquery-1.11.3.min.js"></script>
+	<script src="../static/bootstrap/3.3.5/dist/js/bootstrap.min.js"></script>
+	<script src="../static/common/common.js"></script>
+	<script type="text/javascript">
+		// 路径配置
+		require.config({
+			paths : {
+				echarts : '../static/echarts/build/dist'
+			}
+		});
+
+		// 使用
+		require(
+				[ 'echarts', 'echarts/chart/gauge', 'echarts/chart/pie',
+						'echarts/chart/funnel', 'echarts/chart/line' // 使用柱状图就加载bar模块，按需加载
+				],
+				function(ec) {
+					// 基于准备好的dom，初始化echarts图表
+					var myChart0 = ec.init(document.getElementById('graph0'));
+					var myChart1 = ec.init(document.getElementById('graph1'));
+					var myChart3 = ec.init(document.getElementById('graph3'));
+					var myChart5 = ec.init(document.getElementById('graph5'));
+					var myChart6 = ec.init(document.getElementById('graph6'));
+					var myChart7 = ec.init(document.getElementById('graph7'));
+					var myChart8 = ec.init(document.getElementById('graph8'));
+					var myChart9 = ec.init(document.getElementById('graph9'));
+					var myChart10 = ec.init(document.getElementById('graph10'));
+					var myChart_last15min = ec.init(document.getElementById('graph_last15min'));
+					var myChart_lastOneHour = ec.init(document.getElementById('graph_lastOneHour'));
+					var myChart_lastOneDay = ec.init(document.getElementById('graph_lastOneDay'));
+					var core_myChart1 = ec.init(document
+							.getElementById('core_graph1'));
+					var core_myChart2 = ec.init(document
+							.getElementById('core_graph2'));
+					var core_myChart3 = ec.init(document
+							.getElementById('core_graph3'));
+					var core_myChart4 = ec.init(document
+							.getElementById('core_graph4'));
+					option0 = {
+						series : [ {
+							name : 'CPU平均利用率',
+							type : 'gauge',
+							splitNumber : 4, // 分割段数，默认为5
+							axisLine : { // 坐标轴线
+								lineStyle : { // 属性lineStyle控制线条样式
+									color : [ [ 0.2, '#228b22' ],
+											[ 0.8, '#48b' ], [ 1, '#ff4500' ] ],
+									width : 8
+								}
+							},
+							axisTick : { // 坐标轴小标记
+								splitNumber : 10, // 每份split细分多少段
+								length : 10, // 属性length控制线长
+								lineStyle : { // 属性lineStyle控制线条样式
+									color : 'auto'
+								}
+							},
+							axisLabel : { // 坐标轴文本标签，详见axis.axisLabel
+								show : true,
+								textStyle : { // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+									color : 'auto',
+									fontSize : 10,
+								}
+							},
+							splitLine : { // 分隔线
+								show : true, // 默认显示，属性show控制显示与否
+								length : 15, // 属性length控制线长
+								lineStyle : { // 属性lineStyle（详见lineStyle）控制线条样式
+									color : 'auto'
+								}
+							},
+							pointer : {
+								width : 3
+							},
+							title : {
+								show : true,
+								offsetCenter : [ 0, '-40%' ], // x, y，单位px
+								textStyle : { // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+									fontWeight : 'bolder'
+								}
+							},
+							detail : {
+								formatter : '{value}%',
+								textStyle : { // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+									color : 'auto',
+									fontSize : 20,
+									fontWeight : 'bolder'
+								}
+							},
+							data : [ {
+								value : 20
+							} ]
+						} ]
+					};
+					option1 = {
+						title : {
+							text : '内存平均利用率',
+							x : 'center',
+							textStyle : {
+								fontSize : 14,
+							}
+						},
+						series : [ {
+							name : '内存平均利用率',
+							type : 'gauge',
+							splitNumber : 4, // 分割段数，默认为5
+							axisLine : { // 坐标轴线
+								lineStyle : { // 属性lineStyle控制线条样式
+									/* 	color : [ [ 0.3, '#4EA84E' ], [ 0.7, '#EEA43C' ],
+													[ 1, '#D54B47' ] ], */
+									color : [ [ 0.2, '#228b22' ],
+											[ 0.8, '#48b' ], [ 1, '#ff4500' ] ],
+									width : 8
+								}
+							},
+							axisTick : { // 坐标轴小标记
+								splitNumber : 10, // 每份split细分多少段
+								length : 10, // 属性length控制线长
+								lineStyle : { // 属性lineStyle控制线条样式
+									color : 'auto'
+								}
+							},
+							axisLabel : { // 坐标轴文本标签，详见axis.axisLabel
+								textStyle : { // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+									color : 'auto'
+								}
+							},
+							splitLine : { // 分隔线
+								show : true, // 默认显示，属性show控制显示与否
+								length : 15, // 属性length控制线长
+								lineStyle : { // 属性lineStyle（详见lineStyle）控制线条样式
+									color : 'auto'
+								}
+							},
+							pointer : {
+								width : 5
+							},
+							title : {
+								show : true,
+								offsetCenter : [ 0, '-40%' ], // x, y，单位px
+								textStyle : { // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+									fontSize : 14,
+								}
+							},
+							detail : {
+								formatter : '{value}%',
+								textStyle : { // 其余属性默认使用全局文本样式，详见TEXTSTYLE
+									color : 'auto',
+									fontSize : 22,
+									fontWeight : 'bolder',
+								}
+							},
+							data : [ {
+								value : 60
+							} ]
+						} ]
+					};
+					var option3 = {
+						title : {
+							text : '线程数记录',
+							x : 'center',
+							textStyle : {
+								fontSize : 14,
+							}
+						},
+						calculable : true,
+						grid : {
+							x : 40,
+							y : 30,
+							x2 : 20,
+							y2 : 30,
+						},
+						xAxis : [ {
+							type : 'category',
+							boundaryGap : false,
+							data : [ '12:00', '12:10', '12:20', '12:30',
+									'12:40', '12:50', '13:00' ]
+						} ],
+						yAxis : [ {
+							type : 'value',
+							axisLabel : {
+							// formatter : '{value} %'
+							}
+						} ],
+						series : [ {
+							name : '线程数记录',
+							type : 'line',
+							data : [ 100, 130, 200, 500, 505, 400, 450 ],
+						} ]
+					};
+
+					var option5 = {
+						title : {
+							text : '句柄数记录',
+							x : 'center',
+							textStyle : {
+								fontSize : 14,
+							}
+						},
+						grid : {
+							x : 40,
+							y : 30,
+							x2 : 20,
+							y2 : 30,
+						},
+						xAxis : [ {
+							type : 'category',
+							boundaryGap : false,
+							data : [ '12:00:00', '12:10:00', '12:20:00', '12:30:00',
+									'12:40:00', '12:50:00', '13:00:00' ]
+						} ],
+						yAxis : [ {
+							type : 'value',
+							axisLabel : {
+							// formatter : '{value} %'
+							}
+						} ],
+						series : [ {
+							name : '已用线程',
+							type : 'line',
+							data : [ 1000, 1300, 2000, 5000, 5500, 4000, 4500 ],
+						} ]
+					};
+					var option6 = {
+						title : {
+							text : '进程数记录',
+							x : 'center',
+							textStyle : {
+								fontSize : 14,
+							}
+						},
+						grid : {
+							x : 40,
+							y : 30,
+							x2 : 20,
+							y2 : 30,
+						},
+						xAxis : [ {
+							type : 'category',
+							boundaryGap : false,
+							data : [ '12:00', '12:10', '12:20', '12:30',
+									'12:40', '12:50', '13:00' ]
+						} ],
+						yAxis : [ {
+							type : 'value',
+							axisLabel : {
+							// formatter : '{value} %'
+							}
+						} ],
+						series : [ {
+							name : '进程数记录',
+							type : 'line',
+							data : [ 10, 13, 20, 50, 55, 40, 45 ],
+						} ]
+					};
+					var option7 = {
+						grid : {
+							x : 60,
+							y : 10,
+							x2 : '10%',
+							y2 : 30
+						},
+						xAxis : [ {
+							type : 'category',
+							boundaryGap : false,
+							data : [ '12:00:00', '12:10:00', '12:20:00', '12:30:00',
+									'12:40:00', '12:50:00', '13:00:00' ]
+						} ],
+						yAxis : [ {
+							type : 'value',
+							axisLabel : {
+								formatter : '{value} kbps',
+								interval : 'auto',
+							}
+						} ],
+						series : [ {
+							type : 'line',
+							itemStyle : {
+								normal : {
+									areaStyle : {
+										type : 'default'
+									}
+								}
+							},
+							data : [ 10, 13, 20, 10, 95, 11, 13 ],
+						} ]
+					};
+					var option8 = {
+						grid : {
+							x : 30,
+							y : 10,
+							x2 : '9%',
+							y2 : 30
+						},
+						xAxis : [ {
+							type : 'category',
+							boundaryGap : false,
+							data : [ '12:00', '12:10', '12:20', '12:30',
+									'12:40', '12:50', '13:00' ]
+						} ],
+						yAxis : [ {
+							type : 'value',
+						} ],
+						series : [ {
+							type : 'line',
+							data : [ 10, 13, 20, 50, 55, 40, 45 ],
+						} ]
+					};
+					var option9 = {
+						grid : {
+							x : 60,
+							y : 10,
+							x2 : '10%',
+							y2 : 30
+						},
+						xAxis : [ {
+							type : 'category',
+							boundaryGap : false,
+							data : [ '12:00', '12:10', '12:20', '12:30',
+									'12:40', '12:50', '13:00' ]
+						} ],
+						yAxis : [ {
+							type : 'value',
+							axisLabel : {
+								formatter : '{value} kbps',
+								interval : 'auto',
+							}
+						} ],
+						series : [ {
+							type : 'line',
+							itemStyle : {
+								normal : {
+									areaStyle : {
+										type : 'default'
+									}
+								}
+							},
+							data : [ 10, 13, 20, 10, 95, 11, 13 ],
+						} ]
+					};
+					var option10 = {
+						grid : {
+							x : 30,
+							y : 10,
+							x2 : '9%',
+							y2 : 30
+						},
+						xAxis : [ {
+							type : 'category',
+							boundaryGap : false,
+							data : [ '12:00', '12:10', '12:20', '12:30',
+									'12:40', '12:50', '13:00' ]
+						} ],
+						yAxis : [ {
+							type : 'value',
+						} ],
+						series : [ {
+							type : 'line',
+							data : [ 10, 13, 20, 50, 55, 40, 45 ],
+						} ]
+					};
+					var option_core = {
+						tooltip : {
+							trigger : 'axis'
+						},
+						grid : {
+							x : '40 px',
+							y : '30 px',
+							x2 : '15 px',
+						},
+						xAxis : [ {
+							type : 'category',
+							boundaryGap : false,
+							data : [ '12:00', '12:10', '12:20', '12:30',
+									'12:40', '12:50', '13:00' ]
+						} ],
+						yAxis : [ {
+							type : 'value',
+							axisLabel : {
+								formatter : '{value} %'
+							}
+						} ],
+						series : [ {
+							name : '利用率',
+							type : 'line',
+							data : [ 10, 13, 20, 50, 95, 40, 45 ],
+						} ]
+					};
+					<!-- 指标信息 -->
+					var option_last15min = {
+						 title : {
+							text : 'CPU/内存使用记录',
+							textStyle : {
+								fontSize : 14,
+							}
+						}, 
+						tooltip : {
+							trigger : 'axis'
+						},
+						grid : {
+							x : '40 px',
+							y : '30 px',
+							x2 : '25 px',
+						},
+						legend : {
+							data : [ 'CPU', '内存' ]
+						},
+						xAxis : [ {
+							type : 'category',
+							boundaryGap : false,
+							data : [ '00:00:00',
+									'00:03:00',
+									'00:06:00',
+									'00:09:00', 
+									'00:12:00',
+									'00:15:00']
+						} ],
+						yAxis : [ {
+							type : 'value',
+							axisLabel : {
+								formatter : '{value} %'
+							}
+						} ],
+						series : [
+								{
+									name : 'CPU',
+									type : 'line',
+									data : [ 14, 21, 27, 36, 44, 11],
+								},
+								{
+									name : '内存',
+									type : 'line',
+									data : [ 34, 31, 37, 46, 44, 49 ],
+								} ]
+					};
+					var option_lastOneHour = {
+						title : {
+							text : 'CPU/内存使用记录',
+							textStyle : {
+								fontSize : 14,
+							}
+						},
+						legend : {
+							data : [ 'CPU', '内存' ]
+						},
+						tooltip : {
+							trigger : 'axis'
+						},
+						grid : {
+							x : '40 px',
+							y : '30 px',
+							x2 : '25 px',
+							y2 : 30,
+						},
+						calculable : true,
+						xAxis : [ {
+							type : 'category',
+							boundaryGap : false,
+							data : [ '12:00:00', '12:05:00', '12:10:00', '12:15:00',
+									'12:20:00', '12:25:00', '12:30:00', '12:35:00',
+									'12:40:00', '12:45:00', '12:50:00', '12:55:00', '13:00:00' ]
+						} ],
+						yAxis : [ {
+							type : 'value',
+							axisLabel : {
+								formatter : '{value} %'
+							}
+						} ],
+						series : [
+							{
+								name : 'CPU',
+								type : 'line',
+								data : [ 21, 31, 33, 41, 31, 44, 46, 10,
+										55, 50, 50, 54, 43 ],
+							},
+							{
+								name : '内存',
+								type : 'line',
+								data : [ 41, 41, 41, 41, 41, 31, 31, 31,
+										41, 41, 41, 41, 41 ],
+							} ]
+					};
+					var option_lastOneDay = {
+						title : {
+							text : 'CPU使用记录',
+							textStyle : {
+								fontSize : 14,
+							}
+						}, 
+						tooltip : {
+							trigger : 'axis'
+						},
+						grid : {
+							x : '40 px',
+							y : '30 px',
+							x2 : '25 px',
+						},
+						legend : {
+							data : [ 'CPU', '内存' ]
+						},
+						xAxis : [ {
+							type : 'category',
+							boundaryGap : false,
+							data : [ '00:00:00', '', '02:00:00', '', '04:00:00', '',
+									'06:00:00', '', '08:00:00', '', '10:00:00', '',
+									'12:00:00', '', '14:00:00', '', '16:00:00', '',
+									'18:00:00', '', '20:00:00', '', '22:00:00', '',
+									'24:00:00' ]
+						} ],
+						yAxis : [ {
+							type : 'value',
+							axisLabel : {
+								formatter : '{value} %'
+							}
+						} ],
+						series : [
+								{
+									name : 'CPU',
+									type : 'line',
+									data : [ 14, 21, 27, 36, 44, 11, 32, 29,
+											36, 21, 31, 33, 41, 31, 44, 46, 10,
+											55, 50, 50, 54, 43, 54, 43, 28 ],
+								},
+								{
+									name : '内存',
+									type : 'line',
+									data : [ 34, 31, 37, 46, 44, 49, 32, 29,
+											36, 41, 41, 33, 41, 41, 44, 66, 49,
+											55, 55, 59, 54, 43, 33, 33, 33 ],
+								} ]
+					};
+					myChart0.setOption(option0);
+					myChart1.setOption(option1);
+					myChart3.setOption(option3);
+					myChart5.setOption(option5);
+					myChart6.setOption(option6);
+					myChart7.setOption(option7);
+					myChart8.setOption(option8);
+					myChart9.setOption(option9);
+					myChart10.setOption(option10);
+					myChart_last15min.setOption(option_last15min);
+					myChart_lastOneHour.setOption(option_lastOneHour);
+					myChart_lastOneDay.setOption(option_lastOneDay);
+					//四个CPU内核折线
+					core_myChart1.setOption(option_core);
+					core_myChart2.setOption(option_core);
+					core_myChart3.setOption(option_core);
+					core_myChart4.setOption(option_core);
+					window.addEventListener("resize", function() {
+						myChart0.resize();
+						myChart1.resize();
+						myChart3.resize();
+						myChart5.resize();
+						myChart6.resize();
+						myChart7.resize();
+						myChart8.resize();
+						myChart9.resize();
+						myChart10.resize();
+						core_myChart1.resize();
+						core_myChart2.resize();
+						core_myChart3.resize();
+						core_myChart4.resize();
+						myChart_last15min.resize();
+						myChart_lastOneDay.resize();
+						myChart_lastOneDay.resize();
+					});
+					$('#core_Modal').on('shown.bs.modal', function() {
+						core_myChart1.resize();
+						core_myChart2.resize();
+						core_myChart3.resize();
+						core_myChart4.resize();
+					});
+					$('#tcp_model').on('shown.bs.modal', function() {
+						myChart9.resize();
+						myChart10.resize();
+					});
+				});
+
+		//切换标签时，改变下拉菜单按钮的显示，最近1小时/最近1天 
+		$('.lastInfo').on(
+				'shown.bs.tab',
+				function(e) {
+					$("#myTabDrop1")[0].innerHTML = e.target.innerHTML
+							+ "<span class='caret'></span>";
+				});
+	</script>
+</html>

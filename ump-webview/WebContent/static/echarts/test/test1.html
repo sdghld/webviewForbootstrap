@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ECharts</title>
+</head>
+<body>
+<div id="main" style="height:400px"></div>
+<script src="../build/dist/echarts.js" ></script>
+
+<script type="text/javascript">
+   /* require.config({
+	   paths:{
+		   echarts:'../build/dist'
+	   }
+   }); */
+   
+   require.config({
+       packages: [
+           {
+               name: 'zrender',
+               location: '../src',
+               main: 'zrender'
+           },
+           {
+               name: 'echarts',
+               location: '../src',      
+               main: 'echarts'
+           },
+       ]
+   });
+   require(['echarts',"zrender","zrender/shape/Line"],
+		  
+	   function(ec,zrender,LineShape){
+	   var zr = zrender.init( document.getElementById("main") );
+	   console.debug("zr",zr);
+	   var IconShape = require('echarts/util/shape/Icon');
+	   //var LineShape=require('echarts/chart/line');
+	   
+	   var linkShape = new LineShape({
+           style : {
+               xStart : 0,
+               yStart : 0,
+               xEnd : 200,
+               yEnd : 200,
+               lineWidth : 1
+           },
+           clickable: true,
+           highlightStyle : {},
+           zlevel: 1
+       });
+	   zr.addShape(linkShape);
+	   console.debug("linkShape",linkShape);
+	   console.debug("zr1",zr);
+	   var symbolShape = new IconShape({
+           style: {
+               x: -5,
+               y: 0,
+               width: 10,
+               height: 10,
+               iconType: "arrow",
+               brushType: 'fill',
+               // Use same style with link shape
+               color: 'red',
+               opacity: linkShape.style.opacity,
+               shadowBlur: linkShape.style.shadowBlur,
+               shadowColor: linkShape.style.shadowColor,
+               shadowOffsetX: linkShape.style.shadowOffsetX,
+               shadowOffsetY: linkShape.style.shadowOffsetY
+           },
+           highlightStyle: {
+               brushType: 'fill'
+           },
+           position: [200, 200],
+           rotation: 0
+       });
+	   var symbolShape1 = new IconShape({
+           style: {
+               x: -5,
+               y: 0,
+               width: 10,
+               height: 10,
+               iconType: "arrow",
+               brushType: 'fill',
+               // Use same style with link shape
+               color: 'red',
+               opacity: linkShape.style.opacity,
+               shadowBlur: linkShape.style.shadowBlur,
+               shadowColor: linkShape.style.shadowColor,
+               shadowOffsetX: linkShape.style.shadowOffsetX,
+               shadowOffsetY: linkShape.style.shadowOffsetY
+           },
+           highlightStyle: {
+               brushType: 'fill'
+           },
+           position: [100, 100],
+           rotation: 0
+       });
+       zr.addShape(symbolShape);
+       zr.addShape(symbolShape1);
+	   zr.render();
+	   	  
+   })
+</script>
+
+</body>
+</html>

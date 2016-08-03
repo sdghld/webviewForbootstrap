@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<link href="../static/bootstrap/3.3.5/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="../static/common/common.css" rel="stylesheet">
+<title>交换机</title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">统一监控平台</a>
+			</div>
+			<div id="navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#">概况</a></li>
+					<li><a href="net.html">网络</a></li>
+					<li><a href="deploy.html">部署</a></li>
+					<li><a href="workspaceApp.html">应用</a></li>
+					<li><a href="#">告警</a></li>
+					<li class="active"><a href="windows.html">资源</a></li>
+					<li><a href="#">系统</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">帮助</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">Administrator<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">个人信息</a></li>
+							<li><a href="#">修改密码</a></li>
+							<li><a href="#">个性化</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">注销</a></li>
+						</ul></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="tree tab-content">
+					<ul class="tree-node-1">
+						<li><a href="#"><img src="../static/image/open.gif"><img
+								src="../static/image/server.png"> <span>数据库 </span> </a>
+							<ul class="tree-node-2">
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>Oracle </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="newOracleDB.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/database_online.png"> <span>HRMIS</span>
+										</a></li>
+									</ul></li>
+							</ul></li>
+						<li><a href="#"><img src="../static/image/open.gif"><img
+								src="../static/image/server.png"> <span>服务器</span> </a>
+							<ul class="tree-node-2">
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>Windows </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="windows.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/enable_server.png"> <span>hrmis
+											</span> </a></li>
+									</ul></li>
+
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>Linux </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="linux.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/server.png"> <span>Linux_1</span>
+										</a></li>
+									</ul></li>
+							</ul></li>
+						<li><a href="#"><img src="../static/image/open.gif"><img
+								src="../static/image/server.png"> <span>应用服务器</span> </a>
+							<ul class="tree-node-2">
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>AS </span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="appserver.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/AS.png"> <span>AS服务器</span> </a></li>
+									</ul></li>
+
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>Websphere
+									</span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="websphere.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/server.png"> <span>websphere_1</span>
+										</a></li>
+
+									</ul></li>
+							</ul></li>
+
+						<li><a href="#"><img src="../static/image/open.gif"><img
+								src="../static/image/server.png"> <span>网络设备</span> </a>
+							<ul class="tree-node-2">
+
+								<li><a href="#"> <img src="../static/image/open.gif"><img
+										src="../static/image/server.png"><span>交换机</span>
+								</a>
+									<ul class="tree-node-3">
+										<li><a href="switch.html"><img
+												src="../static/image/leaf.gif"><img
+												src="../static/image/switch_normal.png"> <span>交换机_1</span>
+										</a></li>
+									</ul></li>
+							</ul></li>
+						<ul class="tree-node-2">
+
+							<li><a href="#"> <img src="../static/image/open.gif"><img
+									src="../static/image/server.png"><span>路由器 </span>
+							</a>
+								<ul class="tree-node-3">
+									<li><a href="router.html"><img
+											src="../static/image/leaf.gif"><img
+											src="../static/image/server.png"> <span>路由器_1</span> </a></li>
+								</ul></li>
+						</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<ul class="navbar-right list-inline" style="padding-right: 20px;">
+					<li><a href="#"><div class="tool_bar">
+								<table>
+									<tr>
+										<td><a onclick="popup()" href="#"><img
+												src="../static/image/ping.jpg" alt="PING"
+												data-toggle="tooltip" data-placement="top" title="PING" />
+										</a>&nbsp;&nbsp;&nbsp;</td>
+										<td><a onclick="popup5() " href="#"><img
+												data-toggle="tooltip" data-placement="top"
+												src="../static/image/snmp.png" alt="SNMP连接测试"
+												title="SNMP连接测试" /> </a> &nbsp;&nbsp;&nbsp;</td>
+										<td><a href="#" onclick="popup1()"><img
+												data-toggle="tooltip" data-placement="top"
+												src="../static/image/traceroute.png" alt="TRACEROUTE"
+												title="TRACEROUTE" /> </a> &nbsp;&nbsp;&nbsp;</td>
+										<!-- 
+										<td><a href="#" onclick="popup2()"> <img
+												data-toggle="tooltip" data-placement="top"
+												src="../static/image/tcp.png" alt="TCP端口连接测试"
+												title="TCP端口连接测试" /> </a> &nbsp;&nbsp;&nbsp;</td>
+										 -->
+									</tr>
+								</table>
+							</div> </a></li>
+				</ul>
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#all_Info" data-toggle="tab">指标一览</a>
+					</li>
+					<li><a href="#network_topology" data-toggle="tab">网络拓扑</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">关联应用<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="#relevance_application" data-toggle="tab">数字神经</a>
+							</li>
+							<li><a href="#relevance_application" data-toggle="tab">打印系统</a>
+							</li>
+						</ul></li>
+					<li><a href="#physical_location" data-toggle="tab">物理位置</a></li>
+					<li><a href="" data-toggle="tab">告警</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="all_Info">
+						<div class="container"
+							style="width: 100%; height: 100%; padding-top: 20px;">
+							<div class="page-content">
+								<div class="row">
+									<div class="col-sm-4">
+
+
+										<div class="panel-group" id="accordion">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion"
+															href="#infoCollapse">基本信息</a>
+													</h4>
+												</div>
+												<div id="infoCollapse" class="panel-collapse collapse in">
+													<table class="table">
+														<tbody>
+															<tr>
+																<td colspan="2" align="left"><h4>
+																		<img alt="正常" src="../static/image/switch_normal.png"
+																			style="width: 30px; height: 30px;"> <b>&nbsp;&nbsp;&nbsp;交换机_1</b>
+																	</h4></td>
+															</tr>
+															<tr>
+																<td>类型：</td>
+																<td>华为思科H306</td>
+															</tr>
+
+															<tr>
+																<td>端口数：</td>
+																<td>10</td>
+															</tr>
+															<tr>
+																<td>IP地址:</td>
+																<td>192.168.19.111</td>
+															</tr>
+															<tr>
+																<td>MAC地址:</td>
+																<td>44-37-E6-0B-F9-74</td>
+															</tr>
+															<tr>
+																<td>开机时间：</td>
+																<td>2015-12-28 9:00:00</td>
+															</tr>
+															<tr>
+																<td>描述:</td>
+																<td>三层交换机，管理机房服务器...</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+
+										<div class="panel-group" id="accordion2">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion2"
+															href="#infoCollapse2">CPU和内存</a>
+													</h4>
+												</div>
+												<div id="infoCollapse2" class="panel-collapse collapse in">
+													<div id="graph0" style="height: 200px; overflow: hidden;"></div>
+													<br>
+												</div>
+											</div>
+										</div>
+
+
+
+									</div>
+									<div class="col-sm-8">
+										<div class="panel-group" id="accordion9">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion9"
+															href="#infoCollapse9">网络吞吐量</a>
+													</h4>
+												</div>
+												<div id="infoCollapse9" class="panel-collapse collapse in">
+													<br>
+													<div class="row">
+
+														<div class="col-xs-12" id="graph8" style="height: 200px;"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel-group" id="accordion4">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<h4 class="panel-title">
+														<a data-toggle="collapse" data-parent="#accordion4"
+															href="#infoCollapse4">端口详细列表</a>
+													</h4>
+												</div>
+												<div id="infoCollapse4" class="panel-collapse collapse in">
+													<div class="panel-body">
+														<table class="table" contenteditable="true">
+															<thead>
+																<tr>
+																	<th>#</th>
+																	<th>端口号</th>
+																	<th>端口状态</th>
+																	<th>协议类型</th>
+																	<th>预估带宽</th>
+																	<th>接收/发送最大报文（bit）</th>
+																	<th>输入/输出字节总数（bit）</th>
+																	<th>接受/发送错误数据包</th>
+																	<th>描述信息</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1</td>
+																	<td>135</td>
+																	<td>连接</td>
+																	<td>RIP</td>
+																	<td>2gbps</td>
+																	<td>1gbps</td>
+																	<td>0.9gbps</td>
+																	<td>0.2gbps</td>
+																	<td>B.Tech</td>
+																</tr>
+																<tr>
+																	<td>2</td>
+																	<td>136</td>
+																	<td>连接</td>
+																	<td>RIP</td>
+																	<td>2gbps</td>
+																	<td>1gbps</td>
+																	<td>0.7gbps</td>
+																	<td>0.1gbps</td>
+																	<td>TEST</td>
+																</tr>
+																<tr>
+																	<td>3</td>
+																	<td>137</td>
+																	<td>连接</td>
+																	<td>RIP</td>
+																	<td>2gbps</td>
+																	<td>1gbps</td>
+																	<td>0.8gbps</td>
+																	<td>0.11gbps</td>
+																	<td>WWWER</td>
+																</tr>
+																<tr>
+																	<td>4</td>
+																	<td>138</td>
+																	<td>连接</td>
+																	<td>RIP</td>
+																	<td>2gbps</td>
+																	<td>1gbps</td>
+																	<td>0.7gbps</td>
+																	<td>0.1gbps</td>
+																	<td>B.Tech</td>
+																</tr>
+																<tr>
+																	<td>5</td>
+																	<td>139</td>
+																	<td>连接</td>
+																	<td>RIP</td>
+																	<td>2gbps</td>
+																	<td>1gbps</td>
+																	<td>0.7gbps</td>
+																	<td>0.1gbps</td>
+																	<td>COM</td>
+																</tr>
+
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="relevance_application"
+						style="text-align: center;">
+						<!-- <button class="btn btn-default"
+							onclick="window.open('topo.html');"
+							style="position: absolute; x: 0; y: 0">编辑</button> -->
+						<img alt="应用2" src="../static/image/app.bmp">
+					</div>
+					<div class="tab-pane fade" id="network_topology"
+						style="text-align: center;">
+						<img alt="关联网络拓扑" src="../static/image/net.bmp">
+					</div>
+					<div class="tab-pane fade" id="physical_location">
+						<p>济南-->机房1-->机柜2</p>
+						<img alt="物理位置" src="../static/image/position.bmp">
+					</div>
+					<div class="modal fade" id="int_Modal" tabindex="-1" role="dialog"
+						aria-labelledby="myModalLabel">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">
+										<span aria-hidden="true">×</span><span class="sr-only">Close</span>
+									</button>
+									<h4 class="modal-title">实时CPU和内存信息</h4>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<div class="col-xs-6">
+											<div id="graph11" style="height: 250px; width: 300px"></div>
+										</div>
+										<div class="col-xs-6">
+											<div id="graph12" style="height: 250px; width: 300px"></div>
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default"
+										data-dismiss="modal">关闭</button>
+								</div>
+							</div>
+							<!-- /.modal-content -->
+						</div>
+						<!-- /.modal-dialog -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../static/echarts/build/dist/echarts.js"></script>
+	<script src="../static/jquery/jquery-1.11.3.min.js"></script>
+	<script src="../static/bootstrap/3.3.5/dist/js/bootstrap.min.js"></script>
+	<script src="../static/common/common.js"></script>
+	<script type="text/javascript">
+		// 路径配置
+		require.config({
+			paths : {
+				echarts : '../static/echarts/build/dist'
+			}
+		});
+
+		// 使用
+		require([ 'echarts', 'echarts/chart/gauge', 'echarts/chart/pie',
+				'echarts/chart/funnel', 'echarts/chart/line' // 使用柱状图就加载bar模块，按需加载
+		], function(ec) {
+			// 基于准备好的dom，初始化echarts图表
+			var myChart0 = ec.init(document.getElementById('graph0'));
+
+			var option0 = {
+				legend : {
+					data : [ 'CPU', '内存' ]
+				},
+				tooltip : {
+					trigger : 'axis'
+				},
+				grid : {
+					x : '40 px',
+					y : '30 px',
+					x2 : '25 px',
+					y2 : 30,
+				},
+				calculable : true,
+				xAxis : [ {
+					type : 'category',
+					boundaryGap : false,
+					data : [ '12:00:00', '12:05:00', '12:10:00', '12:15:00',
+							'12:20:00', '12:25:00', '12:30:00', '12:35:00',
+							'12:40:00', '12:45:00', '12:50:00', '12:55:00',
+							'13:00:00' ]
+				} ],
+				yAxis : [ {
+					type : 'value',
+					axisLabel : {
+						formatter : '{value} %'
+					}
+				} ],
+				series : [
+						{
+							name : 'CPU',
+							type : 'line',
+							data : [ 21, 31, 33, 41, 31, 44, 46, 10, 55, 50,
+									50, 54, 43 ],
+						},
+						{
+							name : '内存',
+							type : 'line',
+							data : [ 41, 41, 41, 41, 41, 31, 31, 31, 41, 41,
+									41, 41, 41 ],
+						} ]
+			};
+
+			myChart0.setOption(option0);
+			var myChart8 = ec.init(document.getElementById('graph8'));
+			var option8 = {
+					title : {
+						text : '网络吞吐量',
+						x : 'center',
+					},
+					tooltip : {
+						trigger : 'axis'
+					},
+					tooltip: {
+					       trigger: "item",
+					       formatter: "{a} <br/> {c} Mbps"
+					   },
+					calculable : true,
+					xAxis : [ {
+						type : 'category',
+						boundaryGap : false,
+						data : [ '0', '1','2','3','4','5','6','7', '8', '9', '10', '11','12','13','14','15','16','17','18','19','20','21','22','23','24' ]
+					} ],
+					yAxis : [ {
+						type : 'value',
+						axisLabel : {
+							formatter : '{value} Mbps'
+						}
+					} ],
+					grid : {
+						x : 95,
+						y : 25,
+						x2:95,
+						y2:35
+					},
+					series : [ {
+						name : '吞(输入)',
+						type : 'line',
+						data : [ 34, 31,37,46,44,49,32,29, 36, 41, 31, 33,41,41,44,46,49,55,58,59,54,43,34,33,28 ]
+					} ,
+					{
+						name : '吐(输出)',
+						type : 'line',
+						data : [ 23,34, 31,37,46,44,49,32,29, 36, 41, 31, 33,41,41,44,46,49,55,58,59,54,43,34,33 ]
+					}
+					]
+				};
+			myChart8.setOption(option8);
+		});
+	</script>
+</html>

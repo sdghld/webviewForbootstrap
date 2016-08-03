@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<link href="../static/bootstrap/3.3.5/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link href="../static/common/common.css" rel="stylesheet">
+<title>应用视图</title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">统一监控平台</a>
+			</div>
+			<div id="navbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#">概况</a></li>
+					<li><a href="net.html">网络</a></li>
+					<li><a href="deploy.html">部署</a></li>
+					<li class="active"><a href="workspaceApp.html">应用</a></li>
+					<li><a href="#">告警</a></li>
+					<li><a href="windows.html">资源</a></li>
+					<li><a href="#">系统</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">帮助</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-haspopup="true"
+						aria-expanded="false">Administrator<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">个人信息</a></li>
+							<li><a href="#">修改密码</a></li>
+							<li><a href="#">个性化</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#">注销</a></li>
+						</ul></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="tree tab-content">
+					<ul class="tree-node-1 yy">
+						<li><a href="#"><img src="../static/image/link.jpg">
+								<br> <span>数字神经</span> </a></li>
+						<li><a href="#"><img src="../static/image/printer.png">
+								<br> <span>打印系统</span> </a></li>
+						<li><a href="#"><img
+								src="../static/image/application.png"> <br> <span>应用3</span>
+						</a></li>
+						<li><a href="#"><img src="../static/image/network.png">
+								<br> <span>网络监控</span> </a></li>
+						<li><a href="#"><img src="../static/image/processTwo.png">
+								<br> <span>处理系统</span> </a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class="tool">
+					<input class="btn btn-default" type="button" value="编辑"
+						onclick="window.open('topo.html');">
+				</div>
+				<div style="text-align: center">
+					<img src="../static/image/szsj.bmp">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../static/jquery/jquery-1.11.3.min.js"></script>
+	<script src="../static/bootstrap/3.3.5/dist/js/bootstrap.min.js"></script>
+	<script src="../static/common/common.js"></script>
+</body>
+</html>

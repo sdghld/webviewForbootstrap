@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ECharts</title>
+</head>
+<body>
+<div id="main" style="height:400px"></div>
+<script src="../build/dist/echarts.js" ></script>
+
+<script type="text/javascript">
+   require.config({
+	   paths:{
+		   echarts:'../build/dist'
+	   }
+   });
+   require(['echarts',"echarts/chart/bar","echarts/chart/line"],
+	   function(ec){
+	   	  var mychart=ec.init(document.getElementById('main'));
+	   	  var option={
+	   			 title : {
+	   		        text: '销量纪录',
+	   		        subtext: '纯属虚构',
+	   		        link:"../index.html",
+	   		        target:"blank",
+	   		        sublink:"../index.html",
+		   		    subtarget:"self",
+		   		 	textAlign:"left",
+		   		 	y:"top"
+	   		    },
+	   	      tooltip:{
+	   	    	  show:true,
+	   	    	  trigger:'axis',
+	   	    	  axisPointer:{
+	   	    		type : 'line',
+	   	    		lineStyle : {
+	   	    		  color: '#1e90ff',
+	   	    		  width: 1,
+	   	    		  type: 'dashed'
+	   	    		},
+	   	    	  }
+	   	      },
+	   	      legend:{
+	   	    	 data:['销量'] 
+	   	      },
+	   	      toolbox: {
+	             show : true,
+	             feature : {
+	                 mark : {show: true},//辅助线
+	                 dataView : {show: true, readOnly: false},//数据图表
+	                 magicType : {show: true, type: ['line', 'bar','line']},
+	                 restore : {show: true},//恢复
+	                 saveAsImage : {show: true}//保存
+	             }
+           },
+	   	      xAxis:[{
+	   	    	  type:'category',
+	   	    	  data:["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+	   	      }],
+	   	   yAxis : [
+                    {
+                        type : 'value'
+                    }
+                ],
+                series : [
+                          {
+                              "name":"销量",
+                              "type":"bar",
+                              "data":[5, 20, 40, 10, 10, 20]
+                          }
+                      ]     
+	   	  };
+	   	  mychart.setOption(option);
+	   	  
+	   	/* var myChart1 = require('echarts').init(document.getElementById('main'));
+	   	var option1={
+		   	      tooltip:{
+		   	    	  show:true
+		   	      },
+		   	      legend:{
+		   	    	 data:['销售量'] 
+		   	      },
+		   	      xAxis:[{
+		   	    	  type:'category',
+		   	    	  data:["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+		   	      }],
+		   	   yAxis : [
+	                    {
+	                        type : 'value'
+	                    }
+	                ],
+	                series : [
+	                          {
+	                              "name":"销售量",
+	                              "type":"line",
+	                              "data":[5, 20, 40, 10, 10, 20]
+	                          }
+	                      ]     
+		   	  };
+	   	myChart1.setOption(option1); 
+		myChart1.setOption({
+			tooltip:{
+	   	    	  show:true
+	   	      },
+	   	      legend:{
+	   	    	 data:['量'] 
+	   	      },
+	   	      xAxis:[{
+	   	    	  type:'category',
+	   	    	  data:["衬衫","毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+	   	      }],
+		}); */
+   })
+</script>
+
+</body>
+</html>
